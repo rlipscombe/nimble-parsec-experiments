@@ -6,6 +6,8 @@ defmodule NimbleParsecExperiments.MixProject do
       app: :nimble_parsec_experiments,
       version: "0.1.0",
       elixir: "~> 1.9",
+      default_task: "escript.build",
+      escript: [main_module: NimbleParsecExperiments],
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
